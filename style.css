@@ -1,13 +1,14 @@
 :root{
-  --primaryolor: #936B56;
-  --secondaryColor: #C99068;
+  --primaryolor: #940512;
+  --secondaryColor: #5B040B;
   --mainWhite: #fff;
   --mainBlack: #222;
   --mainGrey: #827F80;
   --mainSpacing: 0.1rem;
   --mainTransition: all 0.3s linear;
   --bodyColor: #E5E5E5;
-  --borderColor: #B3A69B;
+  --borderColor: #B2C1B2;
+  --iconColor: #141E0E;
 }
 *{
   margin: 0;
@@ -42,9 +43,12 @@ body{
   background-color: transparent;
   border: 1px solid var(--borderColor);
 }
+.nav-search:focus{
+  border: none;
+}
 .nav-icon {
   font-size: 1.5rem;
-  color: var(--mainBlack);
+  color: var(--iconColor);
   opacity: 0.9;
 }
 .cart-btn{
@@ -76,7 +80,7 @@ margin: 1rem 0;
 .filter-box a{
   display: block;
   text-decoration: none;
-  color: var(--secondaryColor);
+  color: var(--primaryolor);
   font-weight: bold;
   border: 1px solid var(--borderColor);
   padding: 0.5rem;
@@ -84,7 +88,7 @@ margin: 1rem 0;
 }
 .filter-box a:hover{
   background-color: var(--primaryolor);
-  color: var(--mainBlack)
+  color: var(--mainWhite)
 }
 .products-center{
   width: 90vw;
@@ -119,11 +123,11 @@ margin: 1rem 0;
 }
 .add-to-cart{
   font-weight: bold;
-  background-color: #936B56;
+  background-color: var(--primaryolor);
   border: none;
   border-radius: 5px;
   padding: 0.5rem 1rem;
-  color: var(--mainBlack);
+  color: var(--mainWhite);
   cursor: pointer;
   margin: 15px 0;
 }

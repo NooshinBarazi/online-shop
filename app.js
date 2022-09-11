@@ -11,6 +11,7 @@ const totalItems = document.querySelector('.cart-items');
 const cartContent = document.querySelector('.cart-content');
 const clearCart = document.querySelector('.clear-cart');
 const searchInput = document.querySelector('.nav-search');
+const btnsFilter = document.querySelectorAll('.btn');
 
 let cart = [];
 let btnsDom = [];
@@ -186,6 +187,15 @@ class UI {
     })
   }
 
+  filterdButton(){
+    btnsFilter.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        filters.searchItem = e.target.dataset.filter;
+        this.displayData(allProductsData, filters)
+      })
+    })
+  }
+
 }
 //3. save in storage
 class Storage {
@@ -217,6 +227,7 @@ document.addEventListener('DOMContentLoaded', () =>{
   ui.getCartBtns();
   ui.cartLogic();
   ui.searchProduct();
+  ui.filterdButton();
   Storage.saveData(productsData);
 })
 
