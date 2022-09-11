@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" href="#" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+شnuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <title>online shop</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <!--navigation-->
+        <nav class="navbar">
+            <div class="navbar-center">
+                <span class="nav-icon">
+                    <i class="fas fa-bars"></i>
+                </span>
+                <input type="search" placeholder="search..." class="nav-search" />
+                <div class="cart-btn">
+                    <span class="nav-icon">
+                        <i class="fas fa-cart-plus"></i>
+                    </span>
+                    <div class="cart-items">0</div>
+                </div>
+            </div>
+            <!--navbar-center-->
+        </nav>
+        <!--sidbar image-->
+        <div class="sidbar">
+            <img src="./assets/images/p-6.jpg" class="sidbar_image" />
+        </div>
+        <div class="filter-box">
+            <a href="#" class="btn" data-filter="">All</a>
+            <a href="#" class="btn" data-filter="shirt">Shirt</a>
+            <a href="#" class="btn" data-filter="Jewelry">Jewelry</a>
+            <a href="#" class="btn" data-filter="watch">Watch</a>
+
+        </div>
+        <section class="products-center">
+            <!-- <div class="product-item">
+                    <div ><img src="./assets/images/1.png" class="product-img"></div>
+                    <div class="product-des">
+                        <span class="product-title">tifany watch</span>
+                        <span class="product-price">50 $</span>
+                    </div>
+                    <button class="add-product">Add to cart</button>
+                </div> -->
+        </section>
+        <!--cart section-->
+        <section class="cart-center">
+            <div class="backdrop"></div>
+            <div class="cart">
+                <h3 class="cart-title">Your Cart</h3>
+                <div class="cart-content">
+                    <!--singel item-->
+                    <!-- <div class="cart-item">
+                        <img class="cart-item-img" src="./assets/images/1.png" />
+                        <div class="cart-item-desc">
+                            <h4>product title</h4>
+                            <h5>$ 12.99</h5>
+                        </div>
+                        <div class="cart-item-conteoller">
+                            <i class="fas fa-chevron-up"></i>
+                            <p>1</p>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div> -->
+                </div>
+
+                <div class="cart-footer">
+                    <span class="cart-total">total price: 99$</span>
+                    <button class="btn clear-cart">clear</button>
+                    <button class="btn cart-item-confirm">confirm</button>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!--main_container-->
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./app.js" type="module"></script>
+</body>
+
+</html>
